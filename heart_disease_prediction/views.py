@@ -22,8 +22,8 @@ def predict(request):
             features = tuple(extracted_data)
             print(features)
 
-            if not features or len(features) != 8:  # Assuming 8 features
-                return JsonResponse({'error': 'Invalid input data'}, status=400)
+            if not features or len(features) != 13:  # Assuming 8 features
+                return JsonResponse({'error': 'Invalid input data or incomplete'}, status=400)
 
             input_data_as_numpy_array = np.asarray(features)
             input_data_reshaped = input_data_as_numpy_array.reshape(1, -1)
