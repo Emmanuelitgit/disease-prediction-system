@@ -8,7 +8,7 @@ from django.conf import settings
 
 
 # Load the trained model
-model_path = os.path.join(settings.BASE_DIR, 'liver_disease_prediction', 'liver_trained_model.sav')
+model_path = os.path.join(settings.BASE_DIR, 'liver_disease_prediction', 'Liver_trained_model.sav')
 loaded_model = pickle.load(open(model_path, 'rb'))
 
 
