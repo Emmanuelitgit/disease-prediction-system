@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'diabetes_prediction',
-    'heart_disease_prediction'
+    'heart_disease_prediction',
+    'liver_disease_prediction'
 ]
 
 MIDDLEWARE = [

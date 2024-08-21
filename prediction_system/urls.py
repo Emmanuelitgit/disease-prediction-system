@@ -21,4 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/diabetes/', include('diabetes_prediction.urls')), 
     path('api/heart-disease/', include('heart_disease_prediction.urls')), 
+    path('api/liver-disease/', include('liver_disease_prediction.urls')), 
 ]
