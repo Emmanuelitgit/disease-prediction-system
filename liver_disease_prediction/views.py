@@ -22,7 +22,7 @@ def predict(request):
             features = tuple(extracted_data)
             print(features)
 
-            if not features or len(features) != 13:  # Assuming 8 features
+            if not features or len(features) != 11:  # Assuming 8 features
                 return JsonResponse({'error': 'Invalid input data or incomplete'}, status=400)
 
             input_data_as_numpy_array = np.asarray(features)
